@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.invisible{
+display: none;
+visibility: hidden;
+}
+body{
+    display:grid;
+    color: white;
+    font-family: 'Open Sans' , 'sans-serif';
+    background-color: black;
+}
+main{
+    display: grid;
+    /*important line of code*/
+    grid-template-columns: repeat(3, 1fr); 
+}
+.box-1,.box-2,.box-3{
+    border-top: none;
+}
+.box-7,.box-8,.box-9{
+    border-bottom: none;
+}
+.box-1,.box-4,.box-7{
+    border-left: none;
+}
+.box-3,.box-6,.box-9{
+    border-right: none;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+}
+main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem; 
+    width: 100%;
+    border: 2px solid white;
+}
+button{
+    width: 40%;
+    background: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: large;
+    border-radius: 0.1rem;
+    border-radius: 0px;
+    border: 0.1px black solid;
+    transition: 0.4s ease-in-out;
+}
+main button{
+    padding: 0.6rem;
+}
+button:hover{
+    background: black;
+    color: white;
+}
+#result{
+    font-size: large;
+    text-align: center;
+    margin: 1rem;
+}
+a{
+    text-decoration:underline;
+    margin: 10px;
+    color: white;
+
+}
+@media screen and (max-width:768px){
+    body{
+        margin:0;
+        padding: 0;
+        font-size: medium;
+    }
+    h1{
+        padding: 5px;
+    }
+    main diV{
+        padding: 2rem;
+    }
+}
